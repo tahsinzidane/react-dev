@@ -1,0 +1,141 @@
+body {
+    /* background-color: #333;
+    color: white; */
+}
+
+body #hero,
+#project,
+#about,
+#contact-form {
+    animation: appeare linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+@keyframes appeare {
+    from {
+        opacity: 0;
+        scale: 0.9;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p,
+ul li,
+a {
+    text-transform: capitalize;
+}
+
+
+
+/* animated nav */
+.navbar {
+    background: #222222;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #a783f5;
+    transition: 0.2s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fec400;
+}
+
+.nav-link {
+    padding: 15px 5px;
+    transition: 0.2s;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #212529;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background: #fec400;
+}
+
+/* animated nav */
+
+#hero h1 {
+    font-size: 4rem;
+}
+
+#hero h3 {
+    position: relative;
+    animation: jumping 6s infinite;
+    transition: ease all;
+}
+
+@keyframes jumping {
+    0% {
+        bottom: 50px;
+    }
+
+    50% {
+        bottom: 30px;
+    }
+
+    70% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 50px;
+    }
+}
+
+.card {}
+
+.card img {
+    transition: ease all;
+}
+
+.card img:hover {
+    border-radius: 10px;
+    transform: scale(1.01);
+
+}
+
+#contact-form ul {
+    list-style: none;
+}
+
+#contact-form ul li {
+    display: inline;
+    margin: 30px 10px;
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+
