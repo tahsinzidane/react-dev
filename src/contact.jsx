@@ -12,7 +12,7 @@ function contact({ number, email }) {
             <div id='contact-form' className="container mt-5">
                 <div className="row">
                     <div className="col-lg-12">
-                        <h1 className='text-center'>contact me</h1>
+                        <h1 className='text-center' style={{textTransform: 'uppercase'}}>contact me</h1>
                     </div>
 
                     <div className="row">

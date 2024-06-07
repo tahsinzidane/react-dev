@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectCard from './projectCard.jsx'
 import Ppreview from './assets/preview of restuarent project.jpg'
 import Btns from './btns.jsx'
+import Portfo from './assets/portfolio website.png'
 
 
 function project(props) {
@@ -29,10 +30,10 @@ function project(props) {
 
                     <div className='col-xl-6 col-lg-6 col-md-12  card'>
                         <ProjectCard
-                            pName='restaurant web page design'
-                            preview={Ppreview}
-                            desc='restaurant web page design ,this is my first demo website design' />
-                        <div className='mt-3 m-1'>
+                            pName='portfolio website design '
+                            preview={Portfo}
+                            desc='portfolio website design in react nativ js , this is my first react project' />
+                        <div className='mt-3 m-1' onClick={() => window.location.href = 'https://github.com/tahsinzidane/react-dev'}>
                             <Btns txt='fork repo' />
                         </div>
                     </div>
